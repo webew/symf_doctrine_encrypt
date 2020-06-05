@@ -1,0 +1,228 @@
+/*
+* Theme Name: aesisoft
+* Author: aesisoft
+* Author URI: http://www.aesisoft.fr
+* Description: Thème spécifique de base
+* Version : 1.0.0
+* Text Domain: eurocob
+* Domain Path: /languages
+*/
+
+/* Couleurs
+#00CEB4 vert d'eau 
+#00BB64 vert tendre
+#083863 bleu foncé
+#D4E1F4 fond logo
+#ECF2FB fond menu
+*/
+
+/* @import 'css/fonts.css'; */
+
+body{ 
+    background: #fff;
+    margin:0; padding:0;
+    color:#111;
+    font-family: Roboto, serif;
+    font-size: 18px;
+}
+
+/* positionnement */
+.margintop {
+    margin-top: 20px;
+}
+.margebottom {
+    margin-bottom: 20px;
+}
+
+/* alignement de texte */
+.text-center {
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.text-right {
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+
+.text-left {
+  margin: 0 auto 0 0;
+  text-align: left;
+}
+
+.fa { font-size:14px; }
+.fa-home { font-size:20px; margin-top:15px; } 
+
+/* images */
+.imgresp {
+  width:100%;
+}
+
+/*******************************************************
+* container bootstrap : 1200px - 992px - 768px - 576px */
+
+.container {
+    width: 100%;
+    padding:0;    
+    padding: 0;
+    margin:0 auto 0 auto;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-small {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .container-small {
+    width: 100%; 
+    max-width: 768px;
+  }
+}
+
+
+/*******************************************************
+* menu */
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-default {
+  background-color: #ECF2FB;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+#logo{
+  padding : 0;
+  display:flex;
+  align-items: center;
+  
+}
+#logo img{
+  width : 50px;
+  margin-right: 20px;
+}
+
+.navbar .fas {
+  font-size: 18px;
+}
+
+/*******************************************************
+* Bouton bootstrap */
+
+.btn, .btn-primary, .btn-light, .btn-medium {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 4px 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
+a.btn, a.btn-primary, a.btn-light, a.btn-medium {
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #00CEB4;
+  border-color: #00CEB4;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #00BB64;
+  border-color: #00BB64;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #00BB64;
+  border-color: #00BB64;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-light {
+  color: #083863;
+  background-color: #ECF2FB;
+  border-color: #ECF2FB;
+}
+.btn-light:hover {
+  color: #083863;
+  background-color: #CEDDF2;
+  border-color: #ECF2FB;
+}
+.btn-light:focus, .btn-light.focus {
+  color: #083863;
+  background-color: #CEDDF2;
+  border-color: #ECF2FB;
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+
+/*******************************************************
+* input */
+input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 0.25rem;
+  padding: 5px 10px;
+  margin:0;
+  font-size: 16px;
+  color: #111;
+  width: auto; min-width:70%;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.1);
+  border-color: #0062cc;
+}
+
+
+label { width:100px;}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.floatright {float:right;}

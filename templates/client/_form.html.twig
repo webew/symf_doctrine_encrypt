@@ -1,0 +1,27 @@
+{# {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Enregister') }}</button>
+{{ form_end(form) }} #}
+
+{{ form_start(form) }}
+    <div class="form-group">
+        {{ form_label(form.Societe, 'Société') }}
+        {{ form_widget(form.Societe) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.Nom, 'Nom') }}
+        {{ form_widget(form.Nom) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.Prenom, 'Prénom') }}
+        {{ form_widget(form.Prenom) }}
+    </div>
+    <div class="form-group">
+        {{ form_label(form.Email, 'Email') }}
+        {{ form_widget(form.Email) }}
+    </div>
+    <div class="buttons">
+        <button class="btn-primary">{{ button_label|default('Enregistrer') }}</button>
+        <a href="{{ path('client_index') }}" class="btn-light">Retour à la liste</a>
+    </div>
+{{ form_end(form) }}

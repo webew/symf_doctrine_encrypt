@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Client{% endblock %}
+
+{% block body %}
+    <h1>Edit Client</h1>
+    
+    {{ include('client/_form.html.twig', {'button_label': 'Modifier'}) }}
+    
+    <div class="floatright">
+    {{ include('client/_delete_form.html.twig') }}
+    </div>
+
+    
+{% endblock %}
